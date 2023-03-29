@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Navbar CSS Baslangıc */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 2rem 2rem 2rem ;
+  
+  background-color:transparent;
+  color: #5e3535;
+  border-bottom: 1px solid black;
+}
+.gece-gunduz svg{
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.gece-gunduz .sun{
+  color: rgb(247,205,3);
+}
+.navbar-logo img {
+  height: 4.64rem;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-item {
+  margin-right: 1.2rem;
+}
+
+.navbar-item button {
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.4);
+  padding: 0.4rem 0.8rem;
+  background-color: #d5e0d5;
+  color: rgb(54, 44, 44);
+  font-size: 1rem;
+  
+}
+.navbar-item button:hover{
+  opacity: 0.8;
+  background-color: #008CBA;
+}
+
+/*Navbar CSS Bitis */
+
+/*Anasayfa JSX Başlangıç*/
+  
+  .anasayfa{
+    text-align: center;
+    
+    margin: 2rem;
+  }
+  .mt{
+    margin-top: 0.8rem;
+  }
+
+
+  .blog-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  
+  }
+  .blog-li{
+    
+    margin-left: 1.4rem;
+  }
+  .blog-li a {
+    color: inherit;
+    font-size: 2.8rem;
+  }
+  .blog-li:nth-child(1) {
+    color: inherit;
+  }
+  
+  .blog-li:nth-child(2) {
+    color: #00acee;
+  }
+  .blog-li:nth-child(3) {
+    color:rgb(247,0,0)
+  }
+  .blog-li:nth-child(4) {
+    color:rgb(0,115,177)
+  }
+  
+
+/*Anasayfa JSX Bitiş*/
+
+
+/*Calisma JSX Başlangıç*/
+.seruven{
+  margin: 2rem;
+}
+.calisma {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+  gap: 0.8rem;
+  
+}
+.calisma-div{
+  text-align: center;
+  box-shadow: 0 0.12rem 0.4rem rgb(0 0 0 / 0.5);
+  border-radius: 1rem;
+}
+.calisma .calisma-div h3 {
+  margin:1.2rem;
+}
+.opac {
+  opacity: 0.6;
+}
+.calisma .calisma-div ul li {
+  list-style: none;
+  font-size: 0.8rem;
+
+}
+.calisma .calisma-div ul li svg {
+  font-size: 1.08rem;
+}
+.calisma .calisma-div ul li:nth-child(1){
+  color:rgb(221,75,37);
+}
+.calisma .calisma-div ul li:nth-child(2){
+  color:rgb(37,75,221);
+}
+.calisma .calisma-div ul li:nth-child(3){
+  color:rgb(111, 56, 167);
+}
+.calisma .calisma-div ul li:nth-child(4){
+  color:rgb(232,212,77);
+}
+.calisma .calisma-div ul li:nth-child(5){
+  color:rgb(0,209,247);
+} 
+
+/*Calisma JSX Bitiş*/
+
+
+/*Project JSX Başlangıç*/
+.project{
+  margin: 2rem;
+  border-bottom: 1px solid black;
+}
+.project-ustdiv{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0.8rem;
+}
+.project-altdiv{
+  box-shadow: 0 0.12rem 0.4rem rgb(0 0 0 / 0.5);
+  
+  overflow: hidden;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border-radius: 1rem;
+
+}
+.project-altdiv img{
+  
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+.project-altdiv:hover{
+  transform: scale(1.06);
+}
+/*Project JSX Bitiş*/
+
+/*Footer JSX Başlangıç*/
+.footer{
+  margin: 2rem;
+  text-align: center;
+}
+.footer span{
+  opacity: 0.7;
+}
+/*Footer JSX Bitiş*/
+
+/*Avatar JSX Başlangıç*/
+.avatar{
+  margin:2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.avatar img {
+  width: 40%;
+  height: 40%;
+  background: linear-gradient(to bottom, #feffff 0%,#ddf1f9 35%,#a0d8ef 96%);
+  border-radius: 100%;
+  box-shadow: 0 0.12rem 0.4rem rgb(0 0 0 / 0.5);
+  margin-bottom: 1rem;
+
+  
+
+}
+/*Avatar JSX Bitiş*/
+
+/*Responsive Tasarım Başlangıç*/
+@media screen and (min-width: 300px) {
+  *{
+    font-size: 14px;
+  }
+  .calisma{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .project-ustdiv{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .navbar-item button{
+    font-size: 13px;
+  }
+  .gece-gunduz svg{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  
+}
+@media screen and (min-width: 550px) {
+  *{
+    font-size: 17px;
+    
+  }
+  .calisma{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .project-ustdiv{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .navbar-item button{
+    font-size: 15px;
+  }
+  .gece-gunduz svg{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  
+}
+@media screen and (min-width: 1100px) {
+  *{
+    font-size: 25px;
+  }
+  .calisma{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .project-ustdiv{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .navbar-item button{
+    font-size: 15px;
+  }
+  .gece-gunduz svg{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  
+}
+
+/*Responsive Tasarım Bitiş*/
+
+
